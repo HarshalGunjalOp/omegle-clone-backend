@@ -27,3 +27,6 @@ io.on('connection', (socket: Socket) => {
 });
 
 // Keep the listen call for local development
+app.listen(process.env.PORT || 3000, () => {
+  console.log(`Server is running`);
+});
